@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор ИМТ</title>
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <!-- CONTAINER -->
+  <div class="container">
+
+    <div class="main">
+
+      <!-- TITLE -->
+      <h1 class="main__title">Калькулятор ИМТ</h1>
+
+      <!-- CALCULATOR -->
+      <div class="calculator">
+
+        <div class="calculator__inputs">
+          <div class="calculator__input--wrapper">
+            <input type="number" placeholder="Ваш рост" class="calculator__input" id="height" min="0" required>
+            <h3 class="calculator__input-text">см</h3>
+          </div>
+
+          <div class="calculator__input--wrapper">
+            <input type="number" placeholder="Ваш вес" class="calculator__input" id="weight" min="0" required>
+            <h3 class="calculator__input-text">кг</h3>
+          </div>
+        </div>
+
+        <button class="calculator__btn" type="button" id="button">Рассчитать</button>
+
+      </div>
+
+      <!-- RESULT -->
+      <div class="result">
+
+        <div class="result__bmi">Ваш ИМТ: <span id="result-bmi"></span></div>
+        <div class="result__total">Итог: <span id="result-total"></span></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JS LINK -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import './reset.scss';
+@import './fonts.scss';
+@import './vars.scss';
+@import './style.scss';
+
+body {
+  color: $white;
+  background-color: $backgroundColor;
+  font-family: 'Neue Machina';
+}
+
+.container {
+  max-width: $containerWidth;
+  margin-top: auto;
+
+  position: absolute;
+  text-align: center;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+h1, h2, h3, h4, h5, h6, p, button, div, span {
+  &::selection {
+    color: $selectionText;
+    background-color: $darkGreen;
+  }
+}
+
+.underweight {
+  background-color: $resultUnderweight;
+}
+
+.normal {
+  background-color: $resultNormal;
+}
+
+.overweight {
+  background-color: $resultOverweight;
+}
+
+.fat {
+  background-color: $resultFat;
+}
+
+input[type="number"] {
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+}

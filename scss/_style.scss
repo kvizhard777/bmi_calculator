@@ -1,0 +1,121 @@
+// Main
+.main {
+  // Main Title
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
+
+// Calculator
+.calculator {
+  padding: 30px;
+  margin-top: 30px;
+
+  border-radius: 10px;
+  border: 1px solid $borderColor;
+  
+  background-color: $calculatorBackground;
+
+  // Calculator Inputs
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  // Calculator Input
+  &__input {
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 15px 20px;
+
+    border-radius: 5px;
+    border: 1px solid $lightGreen;
+
+    &-text {
+      font-size: 18px;
+      font-weight: 600;
+
+      padding: 15px;
+      border-radius: 5px;
+
+      color: $selectionText;
+      background-color: $mainGreen;
+    }
+
+    &--wrapper {
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+    }
+  }
+
+  // Calculator Button
+  &__btn {
+    width: 100%;
+    padding: 20px 40px;
+    margin-top: 30px;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    border: 1px solid $lightGreen;
+    border-radius: 10px;
+
+    color: $selectionText;
+    background-color: $mainGreen;
+
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      color: $white;
+      background-color: $calculatorBackground;
+
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+// Result
+.result {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 20px 30px;
+  margin-top: 10px;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+
+  background-color: $calculatorBackground;
+
+  // Result BMI
+  &__bmi {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    color: $selectionText;
+    background-color: $mainGreen;
+  }
+
+  // Result Total
+  &__total {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+
+    color: $selectionText;
+    background-color: $mainGreen;
+  }
+}
